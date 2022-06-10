@@ -1,0 +1,9 @@
+q1, q2, halt
+
+start:q1
+stop:halt
+
+q1;0 -> q2;1;R
+q1;1 -> q2;1;L
+q2;0 -> q1;1;L
+q2;1 -> halt;1;R
